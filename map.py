@@ -29,6 +29,7 @@ roomGraph = {}
 #initialize first room by appending each exit
 rooms[0] = player.currentRoom.getExits()
 roomsDictionary[0] = player.currentRoom.getExits()
+
 while len(rooms) < len(roomGraph)-1:
     if player.currentRoom.id not in rooms:
         rooms[player.currentRoom.id] = player.currentRoom.getExits()
